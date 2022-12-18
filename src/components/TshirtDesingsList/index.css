@@ -1,0 +1,7 @@
+.desingPopUp {
+    position: absolute;
+    bottom: 1vh;
+    right: 2vw;
+    background-color: #171f46;
+    height: 10vh;
+}

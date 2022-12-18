@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import CustomerPrototype from './components/CustomerPrototype';
+import PrintilaContext from './context/PrintilaContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const App = () => {
+    const [selectedDesignsList, setSelectedDesignsList] = useState([])
+    console.log("SelectedDesignsIds", selectedDesignsList)
+    return (
+        <>
+            <PrintilaContext.Provider value={{ selectedDesignsList, setSelectedDesignsList }}>
+                <CustomerPrototype />
+            </PrintilaContext.Provider>
+
+        </>
+    )
 }
+
+
 
 export default App;
