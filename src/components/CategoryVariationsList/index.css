@@ -1,0 +1,11 @@
+.noVariationImg {
+    width: 50%;
+}
+
+@media (max-width:768px) {
+    /* .variationItemsCon {
+        width: 100vw;
+        height: 50vh;
+        background-color: blue;
+    } */
+}

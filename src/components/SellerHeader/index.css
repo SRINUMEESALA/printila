@@ -1,0 +1,21 @@
+.navbarCon {
+    width: 90%
+}
+
+.activeTab {
+    height: 100%;
+    align-self: stretch;
+}
+
+.navParentCon {
+    background-color: #171f46;
+    height: 11vh;
+}
+
+.websiteNativeColor {
+    color: #FF5454;
+}
+
+.websiteNativeBgColor {
+    background-color: #FF5454;
+}

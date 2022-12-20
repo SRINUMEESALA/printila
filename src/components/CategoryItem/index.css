@@ -1,0 +1,30 @@
+.type {
+    color: #787878;
+}
+
+.lineDec {
+    background-color: #F0F0F0;
+}
+
+.pricesCon p {
+    margin: 0px;
+
+}
+
+.listedCategoriesCon {
+    height: 45vh;
+}
+
+.availablePrintsHead {
+    font-size: 14px;
+}
+
+.onSelectCatCard {
+    background-color: #171f46;
+    color: white;
+}
+
+.styleLine {
+    background-color: grey;
+    color: white;
+}

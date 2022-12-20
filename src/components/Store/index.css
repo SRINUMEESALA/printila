@@ -1,0 +1,43 @@
+.storeParentCon {
+    background-color: #E5E5E5;
+}
+
+
+
+
+.categoryForm {
+    background-color: white;
+}
+
+
+.textColor {
+    color: #171f46;
+}
+
+@media (min-width:768px) {
+
+    .addCategoryAndManageCon {
+        width: 96%;
+        height: 110vh;
+    }
+
+    .addCategoryCon {
+        width: 25%;
+    }
+
+    .catergoryEditCon {
+        width: 75%;
+    }
+}
+
+@media (max-width:767px) {
+    .addCategoryCon {
+        width: 100%;
+    }
+
+    .catergoryEditCon {
+        width: 100%;
+        height: 50vh;
+        overflow: unset;
+    }
+}

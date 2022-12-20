@@ -18,14 +18,14 @@ const TshirtDesingsList = (props) => {
                         </ul>
                         <div className="">
                             {selectedDesignsList.length !== 0 && (
-                                <div className="desingPopUp text-white  rounded d-flex p-3 shadow">
-                                    <div class="form-group d-flex align-self-center m-0">
-                                        <label for="exampleInputEmail1" className=" align-self-center m-0 h5 mr-2">{`Quantity :`}</label>
+                                <div className="desingPopUp text-white  rounded d-flex p-3 shadow justify-content-between">
+                                    <div class="form-group d-flex align-self-center m-0 w-75">
+                                        <label for="exampleInputEmail1" className=" align-self-center m-0 h5 mr-3">{`Quantity :`}</label>
                                         <input type="text" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex:5" />
                                     </div>
                                     <div className="align-self-center">
                                         <button type="button" className="btn text-white websiteNativeBgColor">
-                                            <span className="h6"  >Start Designing</span>
+                                            <span className="h6 mr-2"  >Start Designing</span>
                                             <FiArrowRight />
                                         </button>
                                     </div>

@@ -1,0 +1,64 @@
+.uploadCon {
+    border-style: dashed;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.styleButton {
+    background-color: #171f46;
+    color: white;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.styleButton:hover {
+    color: white;
+    background-color: red;
+}
+
+.textColor {
+    color: #171f46;
+}
+
+
+
+.styleDeleteButton:hover {
+    background-color: red;
+}
+
+@media (min-width:769px) {
+    .addMoreButton {
+        background-color: #171f46;
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .editCon {
+        height: 95%;
+        background-color: white;
+    }
+
+    .VariationImage {
+        height: 90px;
+        width: 60px;
+        padding: 5px;
+    }
+
+    .categroryAddVarCon {
+        width: 80%;
+        padding: 16px;
+    }
+
+    .uploadHead {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:768px) {
+    /* .editCon {
+        width: 100vw;
+    } */
+
+}

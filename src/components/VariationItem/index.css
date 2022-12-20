@@ -1,0 +1,44 @@
+.categroryAddVarCon {
+    width: 80%;
+    padding: 16px;
+}
+
+.uploadHead {
+    font-size: 13px;
+}
+
+.uploadCon {
+    border-style: dashed;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.styleButton {
+    background-color: #171f46;
+    color: white;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.styleButton:hover {
+    color: white;
+    background-color: green;
+}
+
+.textColor {
+    color: #171f46;
+}
+
+.addMoreButton {
+    background-color: #171f46;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:768px) {
+    /* .editCon {
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
+    } */
+}
