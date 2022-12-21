@@ -26,7 +26,6 @@ const VariationItem = (props) => {
     }
     return (
         <div className="editCon d-flex flex-column">
-
             <div className="catergoryItemCon d-flex flex-column text-secondary">
                 <h1 className="h4 textColor ml-3 mt-3">
                     {categoryName}: Variation

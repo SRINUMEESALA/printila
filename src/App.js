@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import Store from './components/Store';
 // import CustomerPrototype from './components/CustomerPrototype';
 import PrintilaContext from './context/PrintilaContext';
-
+import Store from "./components/Store"
 
 
 const App = () => {
