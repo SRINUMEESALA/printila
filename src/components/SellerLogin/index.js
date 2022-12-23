@@ -17,6 +17,7 @@ const SellerLogin = () => {
     const [sentOtp, setSentOtp] = useState(false)
     const [otp, setOtp] = useState("");
     const [isValidOtp, setIsValidOtp] = useState(false)
+    const [isSubmitClicked, setIsSubmitClicked] = useState(false)
 
     console.log(mobile, isTermsAgreed, isValidNumber)
     console.log(otp, isValidOtp)
@@ -32,10 +33,12 @@ const SellerLogin = () => {
 
     const handleChange = (newValue) => {
         setOtp(newValue);
+        setIsSubmitClicked(false)
     };
 
-    const onClickSignIn = () => {
-        if (otp === "111111") {
+    const onClickSignIn = (value) => {
+        setIsSubmitClicked(true)
+        if (otp === "111111" || value === "111111") {
             setIsValidOtp(true)
         }
         else {
@@ -43,14 +46,14 @@ const SellerLogin = () => {
         }
     }
 
-    const onComplete = (value) => {
-        if (value === "111111") {
-            setIsValidOtp(true)
-        }
-        else {
-            setIsValidOtp(false)
-        }
-    }
+    // const onComplete = (value) => {
+    //     if (value === "111111") {
+    //         setIsValidOtp(true)
+    //     }
+    //     else {
+    //         setIsValidOtp(false)
+    //     }
+    // }
 
     const renderMobileEnteringScreen = () => (
         <div className="card-body d-flex flex-column pb-0 mt-2 justify-content-around">
@@ -74,18 +77,33 @@ const SellerLogin = () => {
         </div>
     )
 
+    const showMsg = () => {
+        if (isValidOtp) {
+            return (
+                <div className="alert alert-success" role="alert">
+                    Done!You are logged In.
+                </div>
+            )
+        } else {
+            return (
+                <div className="alert alert-danger" role="alert">
+                    Incorrect OTP! Please try again.
+                </div>
+            )
+        }
+
+    }
+
 
     const renderMobileVerificationScreen = () => (
         <div className="card-body d-flex flex-column pb mt-2 justify-content-around">
             <div>
-                {!isValidOtp && otp.length === 6 && <div className="alert alert-danger" role="alert">
-                    Incorrect OTP! Please try again.
-                </div>}
+                {isSubmitClicked && showMsg()}
                 <h1 className="h5 loginHeading mb-2">Verify Phone</h1>
                 <p className='mt-0'>Code sent to +91 {mobile}</p>
                 <MuiOtpInput
                     length={6}
-                    onComplete={onComplete}
+                    onComplete={onClickSignIn}
                     value={otp}
                     onChange={handleChange}
                     TextFieldsProps={{
