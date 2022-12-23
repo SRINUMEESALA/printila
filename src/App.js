@@ -3,6 +3,7 @@ import './App.css';
 // import CustomerPrototype from './components/CustomerPrototype';
 import PrintilaContext from './context/PrintilaContext';
 import Store from "./components/Store"
+import SellerLogin from './components/SellerLogin';
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
         <>
             <PrintilaContext.Provider value={{ selectedDesignsList, setSelectedDesignsList, categoriesList, setCategoriesList, namingCounter, setNamingCounter }}>
                 {/* <CustomerPrototype /> */}
-                <Store />
+                {/* <Store /> */}
+                <SellerLogin />
             </PrintilaContext.Provider>
 
         </>
